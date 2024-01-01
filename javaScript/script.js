@@ -98,7 +98,7 @@ async function displayAlbums() {
     if (e.href.includes("/songs/") && !e.href.includes(".htaccess")) {
       let folder = e.href.split("/").splice(-2)[0];
       //Get MetaData of the folder..............
-      let a = await fetch(`/songs/${folder}/info.json`);
+      let a = await fetch(`dheeru52.github.io/songs/${folder}/info.json`);
       let response = await a.json();
       // console.log(response);
       cardContainer.innerHTML =
